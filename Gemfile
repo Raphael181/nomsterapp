@@ -63,3 +63,5 @@ end
 gem 'kaminari'
 
 gem 'simple_form'
+
+gem "font-awesome-rails"
