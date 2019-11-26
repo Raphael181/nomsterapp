@@ -15,7 +15,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Nomster</a>
+ 
   <%= link_to 'Nomster', root_path, class: 'navbar-brand' %>
   
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> 
@@ -30,6 +30,13 @@
   </div>
 </nav>
 
+<% if notice.present? %>
+    <p class="alert alert-info"><%= notice %></p>
+<% end %>
+
+<% if alert.present? %>
+    <p class="alert alert-danger"><%= alert %></p>
+<% end %>
 
 
     <%= yield %>
