@@ -15,6 +15,13 @@ class PlacesController < ApplicationController
         redirect_to root_path
     end
     
+    def show
+        @place = Place.find(params[:id]) #this tells the computer to locate the particular id for the place selected
+    end
+    
+    def edit
+    end
+    
     private
     
     def place_params
