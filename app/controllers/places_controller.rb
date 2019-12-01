@@ -21,6 +21,7 @@ class PlacesController < ApplicationController
     
     def show
         @place = Place.find(params[:id]) #this tells the computer to locate the particular id for the place selected
+        @comment = Comment.new
     end
     
     def edit
